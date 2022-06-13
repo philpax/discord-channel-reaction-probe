@@ -29,9 +29,10 @@ def print_report_for_dict(title, emojis, message_count):
     ]
     bottom_n = [name for (name, _) in emoji_counts[:SAMPLE_SIZE]]
     top_n = [name for (name, _) in emoji_counts[-SAMPLE_SIZE:]]
+    top_n.reverse()
     print(f"{title} ({message_count} messages)")
-    print("", f"Top {SAMPLE_SIZE}:", ", ".join(top_n))
-    print("", f"Bottom {SAMPLE_SIZE}:", ", ".join(bottom_n))
+    print("", f"Top {SAMPLE_SIZE} (from highest to lowest):", ", ".join(top_n))
+    print("", f"Bottom {SAMPLE_SIZE} (from lowest to highest):", ", ".join(bottom_n))
 
 
 start_date = output["start_date"]
