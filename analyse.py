@@ -42,7 +42,7 @@ print(f"Report between {start_date} and {end_date}")
 all_emojis = collections.defaultdict(int)
 message_count = 0
 for channel_name, channel in sorted(output["channels"].items()):
-    emojis = channel["emojis"]
+    emojis = dict((emoji_name, 0) for emoji_name in valid_emojis) | channel["emojis"]
     print_report_for_dict("#" + channel_name, emojis, channel["message_count"])
     for emoji_name, count in emojis.items():
         all_emojis[emoji_name] += count
