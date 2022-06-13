@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "discord-channel-reaction-probe"
+version = "0.1.0"
+description = ""
+authors = ["Philpax <me@philpax.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+"discord.py-self" = "^1.9.2"
+emoji = "^1.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

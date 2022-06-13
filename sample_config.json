@@ -1,0 +1,11 @@
+{
+  "probe": {
+    "token": "INSERT_YOUR_OWN_SELF_TOKEN_HERE",
+    "guild_id": "INSERT_GUILD_ID_HERE",
+    "week_count": 6
+  },
+  "analyser": {
+    "filter_standard_emoji": true,
+    "sample_size": 20
+  }
+}
